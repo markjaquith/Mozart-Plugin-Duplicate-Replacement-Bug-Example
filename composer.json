@@ -17,19 +17,22 @@
   ],
   "extra": {
     "mozart": {
-      "dep_namespace": "MarkJaquith\\DuplicateReplacementBug\\Mozart\\",
+      "dep_namespace": "MarkJaquith\\MozartDuplicateReplacementBug\\Mozart\\",
       "dep_directory": "/lib/Mozart/",
       "classmap_directory": "/lib/Mozart/classmaps/",
-			"classmap_prefix": "MarkJaquith_DuplicateReplacementBug_"
+			"classmap_prefix": "MarkJaquith_MozartDuplicateReplacementBug_"
     }
   },
   "autoload": {
     "classmap": [
       "lib/Mozart/classmaps/"
     ],
+    "files" : [
+      "lib/Mozart/DI/functions.php"
+    ],
     "psr-4": {
-			"MarkJaquith\\DuplicateReplacementBug\\Mozart\\": "lib/Mozart/",
-      "MarkJaquith\\DuplicateReplacementBug\\": "app/"
+			"MarkJaquith\\MozartDuplicateReplacementBug\\Mozart\\": "lib/Mozart/",
+      "MarkJaquith\\MozartDuplicateReplacementBug\\": "app/"
     }
   },
   "scripts": {
