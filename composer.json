@@ -1,0 +1,45 @@
+{
+  "name": "markjaquith/mozart-duplicate-replacement-bug-example",
+  "description": "",
+  "require": {
+    "php-di/php-di": "^6.0"
+  },
+  "require-dev": {
+    "coenjacobs/mozart": "^0.6.0-beta-3"
+  },
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Mark Jaquith",
+      "email": "mark@coveredweb.com"
+    }
+  ],
+  "extra": {
+    "mozart": {
+      "dep_namespace": "MarkJaquith\\DuplicateReplacementBug\\Mozart\\",
+      "dep_directory": "/lib/Mozart/",
+      "classmap_directory": "/lib/Mozart/classmaps/",
+			"classmap_prefix": "MarkJaquith_DuplicateReplacementBug_"
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "lib/Mozart/classmaps/"
+    ],
+    "psr-4": {
+			"MarkJaquith\\DuplicateReplacementBug\\Mozart\\": "lib/Mozart/",
+      "MarkJaquith\\DuplicateReplacementBug\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/mozart compose",
+      "composer dump-autoload"
+    ],
+    "post-update-cmd": [
+      "vendor/bin/mozart compose",
+      "composer dump-autoload"
+    ]
+  }
+}
