@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Mozart Plugin Autoloader Bug Example
+Plugin Name: Mozart Plugin Duplicate Replacement Bug Example
 Author: Mark Jaquith
 */
 
