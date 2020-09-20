@@ -11,6 +11,9 @@ use MarkJaquith\MozartDuplicateReplacementBug\Mozart\DI\Container;
 
 require __DIR__ . '/vendor/autoload.php';
 
+// Working around https://github.com/coenjacobs/mozart/issues/66
+require __DIR__ . '/lib/Mozart/DI/functions.php';
+
 class Example {}
 
 add_action('init', function() {

@@ -27,9 +27,6 @@
     "classmap": [
       "lib/Mozart/classmaps/"
     ],
-    "files" : [
-      "lib/Mozart/DI/functions.php"
-    ],
     "psr-4": {
 			"MarkJaquith\\MozartDuplicateReplacementBug\\Mozart\\": "lib/Mozart/",
       "MarkJaquith\\MozartDuplicateReplacementBug\\": "app/"
